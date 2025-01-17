@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ciberweek</title>
+  <meta name="description"
+    content="Descubre todo sobre seguridad informática, ciberseguridad, protección de datos y actividades relacionadas con la tecnología y la innovación. Aprende, participa y mantente protegido en el mundo digital.">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body class="text-textDark font-sans">
+
+  <!-- Hero Section -->
+  <div class="relative h-screen bg-cover bg-center hero">
+    <div class="absolute inset-0 bg-black bg-opacity-40">
+      <!-- Logo y Menú de Navegación -->
+      <include src="./views/header.html"></include>
+
+      <!-- Layout Principal -->
+      <div class="container mx-auto p-4 mt-16 grid gap-16 grid-cols-1">
+        <!-- Lema Principal -->
+        <include src="./views/lema.html"></include>
+
+        <!-- Galería -->
+        <div class="grid gap-4 grid-cols-2 tablet:grid-cols-4 desktop:mt-32">
+          <figure><img src="assets/images/academy_350x350.jpg" alt="Academia" class="gallery-image"></figure>
+          <figure><img src="assets/images/charla_350x350.jpg" alt="Charla" class="gallery-image"></figure>
+          <figure><img src="assets/images/concurso_350x350.jpg" alt="Concurso" class="gallery-image"></figure>
+          <figure><img src="assets/images/taller_350x350.jpg" alt="Taller" class="gallery-image"></figure>
+        </div>
+
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </div>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
 </html>

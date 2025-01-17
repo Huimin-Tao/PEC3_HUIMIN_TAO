@@ -1,0 +1,32 @@
+<header class="sticky top-0 z-10 shadow-sm bg-textDark text-primary">
+  <nav class="flex justify-between items-center px-8 py-4">
+    <!-- Logotipo -->
+    <div class="text-2xl">
+      <a href="./index.html" title="Ciberweek" aria-label="Ir al contenido principal">
+        <i class="fa-solid fa-lock"></i>
+      </a>
+    </div>
+
+    <!-- Barra de navegación -->
+    <ul class="hidden tablet:flex space-x-8 uppercase font-bold text-base tracking-wide">
+      <li><a href="./index.html" class="hover-secondary" aria-label="Enlace a Home">Home</a></li>
+      <li><a href="./speakers.html" class="hover-secondary" aria-label="Enlace a Ponentes">Ponentes</a></li>
+      <li><a href="./contest.html" class="hover-secondary" aria-label="Enlace a Blog">Contest</a></li>
+    </ul>
+
+    <!-- Menú de hamburguesa -->
+    <button class="flex flex-col space-y-1 tablet:hidden focus:outline-none" aria-label="Abrir el menú de navegación">
+      <span class="block w-8 h-1 bg-primary"></span>
+      <span class="block w-8 h-1 bg-primary"></span>
+      <span class="block w-8 h-1 bg-primary"></span>
+    </button>
+  </nav>
+
+  <!-- Navegación desplegable para móviles -->
+  <ul
+    class="hidden flex-col space-y-6 items-center bg-primary text-textDark uppercase font-bold text-base tracking-wide py-6 tablet:hidden">
+    <li><a href="./index.html" class="hover:text-secondary" aria-label="Enlace a Home">Home</a></li>
+    <li><a href="./speakers.html" class="hover:text-secondary" aria-label="Enlace a Ponentes">Ponentes</a></li>
+    <li><a href="./contest.html" class="hover:text-secondary" aria-label="Enlace a Blog">Blog</a></li>
+  </ul>
+</header>

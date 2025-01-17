@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ciberweek</title>
+    <meta name="description"
+        content="Descubre todo sobre seguridad informática, ciberseguridad, protección de datos y actividades relacionadas con la tecnología y la innovación. Aprende, participa y mantente protegido en el mundo digital.">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="text-primary font-sans">
+
+    <!-- Logo y Menú de Navegación -->
+    <include src="./views/header.html"></include>
+
+    <!-- Área principal con las tarjetas -->
+    <main class="py-8">
+        <div class="container mx-auto px-16">
+            <h1 class="text-center text-4xl font-serif font-black mb-16">SPEAKERS</h1>
+            <div class="grid gap-16 grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-4">
+                <!-- Tarjetas -->
+                <div class="card">
+                    <figure><img src="assets/images/alena.jpg" alt="Speaker Alena" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Alena</h2>
+                      <p class="mt-2">Especialista en gestión de riesgos cibernéticos, experta en estrategias para proteger sistemas críticos.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/ana.jpg" alt="Speaker Ana" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Ana</h2>
+                      <p class="mt-2">Analista de vulnerabilidades, especialista en identificar brechas en sistemas empresariales complejos.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/anastasia.jpg" alt="Speaker Anastasia" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Anastasia</h2>
+                      <p class="mt-2">Investigadora en criptografía avanzada, trabaja en el desarrollo de algoritmos seguros para el futuro.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/lucia.jpg" alt="Speaker Lucia" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Lucia</h2>
+                      <p class="mt-2">Especialista en ciberseguridad ofensiva, ayuda a organizaciones a fortalecer sus defensas a través de simulaciones de ataques.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/eric.jpg" alt="Speaker Eric" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Eric</h2>
+                      <p class="mt-2">Ingeniero en seguridad de redes, especializado en protección de infraestructuras críticas contra ataques avanzados.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/jean.jpg" alt="Speaker Jean" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Jean</h2>
+                      <p class="mt-2">Consultor en seguridad informática, enfocado en la implementación de estándares internacionales de ciberseguridad.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/parker.jpg" alt="Speaker Parker" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Parker</h2>
+                      <p class="mt-2">Experta en seguridad de aplicaciones web, ayuda a proteger datos sensibles en entornos digitales modernos.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <figure><img src="assets/images/tom.jpg" alt="Speaker Tom" class="card-image"></figure>
+                    <div class="p-4 text-left">
+                      <h2 class="text-xl font-bold">Tom</h2>
+                      <p class="mt-2">Especialista en respuesta a incidentes, con amplia experiencia en mitigación de ciberataques en tiempo real.</p>
+                      <include src="./views/button.html"></include>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <include src="./views/footer.html"></include>
+
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

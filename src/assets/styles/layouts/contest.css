@@ -1,0 +1,226 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+    letter-spacing: 0.8px;
+}
+
+/* Contenedor */
+.container {
+    width:85%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    font-weight:400;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1 {
+    font-size: 1.4em;
+    font-weight:500;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding:10px 16px;
+    font-size:14px;
+}
+
+/* Sección de Concursantes */
+.contestants {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contestants h2{
+    font-size: 3em;
+}
+
+.contestants p{
+    color:#b3b3b3;
+    font-size:1.5em;
+    font-weight:normal;
+}
+
+.contestants img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top:8em;
+}
+
+/* Sección de Recetas */
+.recipes {
+    padding: 3em 0;
+    text-align: left;
+}
+
+.recipes h2{
+    font-size:2em;
+    margin-bottom:0.3em;
+}
+
+.recipes h3{
+    font-weight:400;
+    margin-bottom:1.8em;
+    margin-left:10px;
+}
+
+.recipes p.auxiliar{
+    color:#b3b3b3;
+    font-size:1.5em;
+    margin-top:0;
+    font-weight:normal;
+}
+
+.recipes p.description{
+    color:#b3b3b3;
+    padding-top:5px;
+}
+
+.recipe-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top:2em;
+}
+
+.recipe-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipe-card .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipe-card .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.recipe-card .author p {
+    margin: 0;
+    font-weight:normal;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    margin-top:50px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-left p{
+    font-size:1.5em;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 20px;
+    color: #b3b3b3;
+    transition: color 0.3s ease;
+}
+
+
+.footer-columns {
+    display: flex;
+    gap: 2em;
+}
+
+
+.footer-column {
+    text-align:left;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight:400;
+    margin-bottom: 10px;
+    text-align:left;
+}
+
+.footer-column ul {
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+    padding: 0;
+    gap:20px;
+    text-align:left;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color:#000;
+}
+
+

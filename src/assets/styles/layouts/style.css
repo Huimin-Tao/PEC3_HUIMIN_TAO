@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  .hero {
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow:hidden;
+  }
+}
+
+
+@layer components {
+  .gallery-image {
+    @apply w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg transition-transform hover:scale-105;
+  }
+
+  .card-image {
+    @apply w-full h-auto rounded-t-lg;
+  }
+
+  .btn-read-more {
+    @apply mt-4 inline-block text-secondary font-bold hover:text-primary;
+  }
+}
+
+
+@layer utilities {
+  .hover-secondary{
+    @apply hover:text-secondary;
+  }
+}
